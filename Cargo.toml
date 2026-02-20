@@ -1,0 +1,16 @@
+[package]
+name = "xdr-serde"
+version = "0.1.0"
+edition = "2024"
+description = "A pure-Rust implementation of XDR (RFC 4506) serialization and deserialization using serde"
+license = "MIT"
+keywords = ["xdr", "serde", "serialization", "nfs", "rpc"]
+categories = ["encoding", "network-programming"]
+
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_bytes = "0.11"
